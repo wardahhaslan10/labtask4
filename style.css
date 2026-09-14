@@ -1,0 +1,264 @@
+/*
+Course Code & Name : DFP40193 Web Programming
+Full Name          : Your Name
+Registration Number: Your Registration Number
+Class              : Your Class
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+header {
+    background-color: #087f5b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+    font-size: 17px;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.content,
+.form-section,
+.details-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.content h2,
+.form-section h2,
+.details-section h2 {
+    margin-top: 0;
+    color: #087f5b;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 18px;
+    margin: 4px;
+    border: none;
+    border-radius: 6px;
+    background-color: #087f5b;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.view {
+    background-color: #1971c2;
+}
+
+.update {
+    background-color: #f08c00;
+}
+
+.delete {
+    background-color: #c92a2a;
+}
+
+.submit {
+    background-color: #087f5b;
+}
+
+.cancel {
+    background-color: #6c757d;
+}
+
+.visitor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.visitor-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.visitor-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-buttons {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.details-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.detail-row {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row strong {
+    color: #087f5b;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.success-box {
+    background-color: #d3f9d8;
+    border: 1px solid #69db7c;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.success-box h2 {
+    color: #2b8a3e;
+}
+
+.error-box {
+    background-color: #ffe3e3;
+    border: 1px solid #ff8787;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.error-box h2 {
+    color: #c92a2a;
+}
+
+.warning-box {
+    background-color: #fff3bf;
+    border: 1px solid #fcc419;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.warning-box h2 {
+    color: #e67700;
+}
+
+footer {
+    margin-top: 25px;
+    background-color: #087f5b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .visitor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .visitor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .content,
+    .form-section,
+    .details-section {
+        padding: 20px;
+    }
+
+}
