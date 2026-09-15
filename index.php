@@ -1,9 +1,9 @@
 <?php
 /*
 Course Code & Name : DFP40193 Web Programming
-Full Name          : Your Name
-Registration Number: Your Registration Number
-Class              : Your Class
+Full Name          : WARDAH BINTI HASLAN
+Registration Number: 18DDT23F1099
+Class              : DDT7B
 */
 ?>
 
@@ -19,7 +19,6 @@ Class              : Your Class
 <body>
 
 <div class="container">
-
     <header>
         <h1>Visit PTSS 2026</h1>
         <p>Visitor Registration System</p>
@@ -30,21 +29,14 @@ Class              : Your Class
     </div>
 
     <section class="content">
-
         <h2>Visitor Registration List</h2>
-
         <?php
-
         $folder = "registrations/";
-
         if (!is_dir($folder)) {
             mkdir($folder);
         }
-
         $files = scandir($folder);
-
         $found = false;
-
         echo '<div class="visitor-grid">';
 
         foreach ($files as $file) {
@@ -107,6 +99,5 @@ Class              : Your Class
     </footer>
 
 </div>
-
 </body>
 </html>
