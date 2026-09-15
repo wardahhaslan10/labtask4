@@ -1,9 +1,9 @@
 <?php
 /*
 Course Code & Name : DFP40193 Web Programming
-Full Name          : Your Name
-Registration Number: Your Registration Number
-Class              : Your Class
+Full Name          : WARDAH BINTI HASLAN
+Registration Number: 18DDT23F1099
+Class              : DDT7B
 */
 
 if (!isset($_GET["file"])) {
@@ -51,56 +51,38 @@ if ($file) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
     <title>Registration Details</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
 <div class="container">
 
     <header>
-
         <h1>Visit PTSS 2026</h1>
-
         <p>Registration Information</p>
-
     </header>
 
     <section class="details-section">
-
         <h2>Visitor Details</h2>
-
         <div class="details-card">
-
             <?php
-
             foreach ($data as $field => $value) {
-
                 echo '<div class="detail-row">';
-
                 echo '<strong>' .
                      htmlspecialchars($field) .
                      '</strong>';
-
                 echo '<span>' .
                      htmlspecialchars($value) .
                      '</span>';
-
                 echo '</div>';
-
             }
-
             ?>
 
         </div>
@@ -113,9 +95,7 @@ if ($file) {
 
             <a href="update.php?file=<?php echo urlencode($fileName); ?>"
                class="button update">
-
                 Update
-
             </a>
 
             <a href="delete.php?file=<?php echo urlencode($fileName); ?>"
@@ -132,15 +112,8 @@ if ($file) {
 
     <footer>
 
-        <p>
-            &copy; 2026 Visit PTSS |
-            Politeknik Tuanku Syed Sirajuddin
-        </p>
-
+        <p>&copy; 2026 Visit PTSS |Politeknik Tuanku Syed Sirajuddin</p>
     </footer>
-
 </div>
-
 </body>
-
 </html>
