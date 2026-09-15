@@ -1,9 +1,9 @@
 <?php
 /*
 Course Code & Name : DFP40193 Web Programming
-Full Name          : Your Name
-Registration Number: Your Registration Number
-Class              : Your Class
+Full Name          : WARDAH BINTI HASLAN
+Registration Number: 18DDT23F1099
+Class              : DDT7B
 */
 ?>
 
@@ -19,20 +19,15 @@ Class              : Your Class
 <body>
 
 <div class="container">
-
     <header>
         <h1>Visit PTSS 2026</h1>
         <p>New Visitor Registration</p>
     </header>
 
     <section class="form-section">
-
         <h2>Visitor Registration Form</h2>
-
         <form action="save.php" method="POST">
-
             <div class="form-grid">
-
                 <div class="form-group">
                     <label>Name</label>
                     <input type="text" name="name">
@@ -65,11 +60,8 @@ Class              : Your Class
 
                 <div class="form-group">
                     <label>Selected Package</label>
-
                     <select name="package">
-
                         <option value="">-- Select Package --</option>
-
                         <option value="Campus Discovery Tour">
                             Campus Discovery Tour
                         </option>
@@ -85,9 +77,7 @@ Class              : Your Class
                         <option value="Guest House Stay">
                             Guest House Stay
                         </option>
-
                     </select>
-
                 </div>
 
                 <div class="form-group">
@@ -109,7 +99,6 @@ Class              : Your Class
                     <label>Remarks</label>
                     <textarea name="remarks"></textarea>
                 </div>
-
             </div>
 
             <div class="form-buttons">
@@ -121,11 +110,8 @@ Class              : Your Class
                 <a href="index.php" class="button cancel">
                     Cancel
                 </a>
-
             </div>
-
         </form>
-
     </section>
 
     <footer>
@@ -133,6 +119,5 @@ Class              : Your Class
     </footer>
 
 </div>
-
 </body>
 </html>
