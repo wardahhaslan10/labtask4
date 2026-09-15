@@ -1,9 +1,9 @@
 <?php
 /*
 Course Code & Name : DFP40193 Web Programming
-Full Name          : Your Name
-Registration Number: Your Registration Number
-Class              : Your Class
+Full Name          : WARDAH BINTI HASLAN
+Registration Number: 18DDT23F1099
+Class              : DDT7B
 */
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -36,7 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (count($errors) > 0) {
 
         ?>
-
         <!DOCTYPE html>
         <html>
         <head>
@@ -45,17 +44,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </head>
 
         <body>
-
         <div class="container">
-
             <div class="error-box">
-
                 <h2>Registration Error</h2>
-
                 <?php
-
                 foreach ($errors as $error) {
-
                     echo "<p>❌ " . htmlspecialchars($error) . "</p>";
 
                 }
@@ -65,16 +58,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="register.php" class="button">
                     Back to Registration
                 </a>
-
             </div>
-
         </div>
-
         </body>
         </html>
-
         <?php
-
         exit;
     }
 
@@ -123,29 +111,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         fclose($file);
 
         ?>
-
         <!DOCTYPE html>
         <html>
-
         <head>
 
             <title>Registration Successful</title>
-
             <link rel="stylesheet" href="style.css">
-
         </head>
 
         <body>
-
         <div class="container">
-
             <div class="success-box">
-
                 <h2>Registration Successful!</h2>
-
-                <p>
-                    Visitor information has been successfully saved.
-                </p>
+                <p>Visitor information has been successfully saved.</p>
 
                 <p>
                     File created:
@@ -155,27 +133,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="index.php" class="button">
                     View Registration List
                 </a>
-
             </div>
-
         </div>
-
         </body>
-
         </html>
-
         <?php
 
     } else {
-
         echo "Unable to create the file.";
-
     }
-
 } else {
-
     header("Location: register.php");
     exit;
-
 }
 ?>
